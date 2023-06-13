@@ -1,0 +1,68 @@
+
+{% extends "base.html" %}
+{% block head %}{% endblock %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="mb-4 bg-light rounded-3">
+   <div class="container-fluid py-4">
+      <h3 class="display-4 text-center">Osmanya Translator</h1>
+      <p class="lead text-center">Transliteration tool converts Latin to Osmanya</p>
+    </div>
+  </div>
+ <div class="row align-items-md-stretch">
+       <div class="col-md-6">
+        <form id="transliterate-form">
+
+   <form method="POST" action="/">
+     <textarea class="form-control" rows="6" placeholder="Enter text" id="text" name="text">{{ text }}</textarea>
+   </div>
+   <div class="col-md-6">
+     <textarea class="form-control" rows="6" placeholder="Transliterated text" readonly>{{ transliterated_text }}</textarea>
+ </div>
+       <div class="container-fluid">
+         <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+           <div class="btn-group mr-2" role="group" aria-label="First group">
+
+           <div class="form-check form-check-inline">
+               <input class="form-check-input" type="radio" name="direction" id="latin-to-osmanya" value="latin-to-osmanya" {% if direction == "latin-to-osmanya" or not direction %}checked{% endif %}>
+               <label class="form-check-label" for="latin-to-osmanya">Latin to Osmanya</label>
+           </div>
+           <div class="form-check form-check-inline">
+               <input class="form-check-input" type="radio" name="direction" id="osmanya-to-latin" value="osmanya-to-latin" {% if direction == "osmanya-to-latin" %}checked{% endif %}>
+               <label class="form-check-label" for="osmanya-to-latin">Osmanya to Latin</label>
+           </div>
+           </div>
+       <div class="btn-group mr-2" role="group" aria-label="Second group">
+         <button type="submit" class="btn btn-primary float-right">Transliterate</button>
+       </div>
+       </div>
+       </div>
+  </form>
+</form>
+ </div>
+</div>
+<div class="container">
+  <div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://osmanya.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+{% endblock %}
+

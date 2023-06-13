@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block title %}About{% endblock %}
+{% block content %}
+
+<div class="container">
+    <!-- Container with Image -->
+    <div class="text-center">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Coat_of_arms_of_Hobyo.svg" alt="Your Image" width="250" class="img-fluid">
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="jumbotron">
+                <h1 class="display-4">Origin</h1>
+                <p class="lead">The Osmanya script, invented in 1920-22 by Osman Yusuf Kenadid for the Somali language, consists of 22 consonants and 10 vowels. It's written from left to right, intended as an easy-to-learn alternative to Arabic and Latin scripts. Despite limited adoption, it holds historical and cultural significance.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="jumbotron">
+                <h1 class="display-4">Key Points</h1>
+                <p class="lead">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Created by Osman Yusuf Kenadid in 1920-22 for writing the Somali language.</li>
+                        <li class="list-group-item">An alphabetic script where each character represents a phoneme.</li>
+                        <li class="list-group-item">Written from left to right.</li>
+                        <li class="list-group-item">The Osmanya script consists of 22 consonants and 10 vowels.</li>
+                        <li class="list-group-item">Each consonant and vowel has two forms: one for the beginning or middle of a word, and one for the end of a word.</li>
+                        <li class="list-group-item">Unlike some scripts, Osmanya does not use conjunct forms; each letter is written separately.</li>
+                        <li class="list-group-item">Osmanya script does not have separate upper case and lower case letters</li>
+                        <li class="list-group-item">Although it gained some popularity during its creation, it was never adopted as the official script for Somali.</li>
+                      </ul>
+                      
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
