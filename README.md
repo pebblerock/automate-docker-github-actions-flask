@@ -16,13 +16,13 @@ docker pull pebblerock/osmanya-flask
 ```
 2. Build the Docker image:
 ```bash
-docker build -t osmanya-flask.
+docker build -t osmanya-flask .
 ```
 3. Run the Docker container:
 ```bash
 docker run -p 5000:5000 osmanya-flask
 ```
-4.Access the app in your web browser:
+4. Access the app in your web browser:
 
 Open your web browser and go to [localhost:5000](http://localhost:5000).
 ## License
