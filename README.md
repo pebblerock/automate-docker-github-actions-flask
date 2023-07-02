@@ -1,6 +1,14 @@
-# Dockerized Flask App
+# CI/CD pipeline to automate Docker image build with GitHub Actions
 
-This is a Dockerized Flask app that transliterates text from Latin script to Osmanya script. It provides a web interface where users can enter text and select the desired transliteration direction. The app then returns the transliterated text.
+This is a simple Flask app that transliterates text from Latin script to [Osmanya script](https://en.wikipedia.org/wiki/Osmanya_(Unicode_block)). It provides a web interface where users can enter text and select the desired transliteration direction, Latin to Osmanya and Osmanya to Latin. Using Github Actions, the app is containerised and pushed to the Docker registry, Docker Hub.
+
+## CI/CD pipeline diagram
+
+![AWS Diagram](/images/pipeline-diagram.png)
+
+## Demo
+
+Find the demo in the [infrastructure repository](https://github.com/pebblerock/terraform-deployment).
 
 ## Prerequisites
 
@@ -28,3 +36,5 @@ Open your web browser and go to [localhost:5000](http://localhost:5000).
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
+
+
