@@ -1,3 +1,7 @@
+## Demo
+
+Find the demo in the [infrastructure repository](https://github.com/pebblerock/terraform-deployment).
+
 # CI/CD pipeline to automate Docker image build with GitHub Actions
 
 This is a simple Flask app that transliterates text from Latin script to [Osmanya script](https://en.wikipedia.org/wiki/Osmanya_(Unicode_block)). It provides a web interface where users can enter text and select the desired transliteration direction, Latin to Osmanya and Osmanya to Latin. Using Github Actions, the app is containerised and pushed to the Docker registry, Docker Hub.
@@ -5,10 +9,6 @@ This is a simple Flask app that transliterates text from Latin script to [Osmany
 ## CI/CD pipeline diagram
 
 ![AWS Diagram](/images/pipeline-diagram.png)
-
-## Demo
-
-Find the demo in the [infrastructure repository](https://github.com/pebblerock/terraform-deployment).
 
 ## Prerequisites
 
